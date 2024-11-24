@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Listing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="todo.html">To-Do List</a></li>
+        <li><a href="product.html" class="active">Product Listing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="filters">
+      <label for="category">Category:</label>
+      <select id="category">
+        <option value="all">All</option>
+        <option value="electronics">Electronics</option>
+        <option value="gadgets">Gadgets</option>
+      </select>
+
+      <label for="sort">Sort:</label>
+      <select id="sort">
+        <option value="price">Price: Low to High</option>
+        <option value="rating">Rating: High to Low</option>
+      </select>
+    </div>
+
+    <div id="product-grid" class="product-grid">
+      <!-- Product 1 -->
+      <div class="product-card" data-category="electronics" data-price="99.99" data-rating="4.5">
+        <img src="./headset.jpg" alt="Wireless Headphones">
+        <h3>Wireless Headphones</h3>
+        <p>Price: $99.99</p>
+        <p>Rating: 4.5 ⭐</p>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card" data-category="electronics" data-price="699.99" data-rating="4.8">
+        <img src="./oppo.jpg" alt="Smartphone">
+        <h3>Smartphone</h3>
+        <p>Price: $699.99</p>
+        <p>Rating: 4.8 ⭐</p>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card" data-category="electronics" data-price="1299.99" data-rating="4.6">
+        <img src="./laptop.jpg" alt="Gaming Laptop">
+        <h3>Gaming Laptop</h3>
+        <p>Price: $1299.99</p>
+        <p>Rating: 4.6 ⭐</p>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card" data-category="gadgets" data-price="199.99" data-rating="4.2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5K3Y5oQ5FFkz83P28szIvNFeAoOYoOLkQSA&s" alt="Smartwatch">
+        <h3>Smartwatch</h3>
+        <p>Price: $199.99</p>
+        <p>Rating: 4.2 ⭐</p>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card" data-category="gadgets" data-price="49.99" data-rating="4.3">
+        <img src="./bluetooth.jpg" alt="Bluetooth Speaker">
+        <h3>Bluetooth Speaker</h3>
+        <p>Price: $49.99</p>
+        <p>Rating: 4.3 ⭐</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Sravani Anasuri. All rights reserved.</p>
+  </footer>
+
+  <script src="product.js"></script>
+</body>
+</html>
